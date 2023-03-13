@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: sans-serif;
+        }
+        .container-fluid {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0px !important;
+        }
+        .container-1 {
+           // border: 1px solid black;
+            height: 80%;
+            padding: 0px !important;
+        }
+        .container-1-inner {
+            //border: 1px solid blue;
+            height: 100%;
+            padding: 0px !important;
+        }
+        .col-md-6 {
+            height: 100%;
+            //border: 1px solid green;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 30px;
+        }
+        .container-1-inner-left h1 {
+            font-size: 65px;
+            font-weight: 900;
+        }
+        .container-1-inner-left p {
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            line-height: 30px;
+        }
+        .btn_box {
+            //border: 1px solid black;
+            width: 80%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .container-1-inner-left span {
+            font-size: 18px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            padding: 25px 50px 25px 50px;
+            background-color: #2891F4;
+            color: white;
+            border-radius: 60px;
+        }
+        .container-1-inner-right {
+            overflow: hidden;
+        }
+        .container-1-inner-right img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;    
+        }
+        @media only screen and (max-width:500px) {
+            .container-fluid {
+                width: 100% !important;
+                height: 190vh;
+            }
+            .container-1 {
+                width: 100%;
+                height: 90% !important;
+                overflow: hidden;
+            }
+            .container-1-inner-right img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .container-1-inner {
+                width: 100% !important;
+            }
+            .container-1-inner-right {
+                width: 100% !important;
+                height: 50% !important;
+            }
+            .container-1-inner-left {
+                width: 100%;
+                height: 50%;
+            }
+            .container-1-inner-left h1 {
+                font-size: 28px;
+                line-height: 40px;
+                text-align: center;
+            }
+            .container-1-inner-left p {
+                font-size: 18px;
+                line-height: 40px;
+                text-align: center;
+            }
+            .btn_box {
+                width: 100%;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    
+    <div class="container-fluid">
+        <div class="container container-1">
+            <div class="col-md-12 container-1-inner">
+                <div class="col-md-6 container-1-inner-left">
+                    <h1>Works for you, even when you aren’t working</h1>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    <div class="btn_box">
+                        <span>learm more</span>
+                        <span>learm more</span>
+                    </div>
+                </div>
+                <div class="col-md-6 container-1-inner-right">
+                    <img src="banner_img.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
